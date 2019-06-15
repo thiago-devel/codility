@@ -14,7 +14,7 @@ def oddOcurrencyInArray(A):
 array = [42]
 arrayExpected = 42
 result = oddOcurrencyInArray(array)
-print 'In the provided array {' + str(array) + '} the odd item is {' + str(result) + '} and the expected was {' + str(arrayExpected) + '}'
+print('In the provided array {' + str(array) + '} the odd item is {' + str(result) + '} and the expected was {' + str(arrayExpected) + '}')
 
 array = []
 last = 0
@@ -25,14 +25,14 @@ for i in range(0, (3)):
 array.insert(len(array), (last + 1))
 arrayExpected = 3
 result = oddOcurrencyInArray(array)
-print 'In the provided array {' + str(array) + '} the odd item is {' + str(result) + '} and the expected was {' + str(arrayExpected) + '}'
+print('In the provided array {' + str(array) + '} the odd item is {' + str(result) + '} and the expected was {' + str(arrayExpected) + '}')
 
 array = [9, 3, 9, 3, 9, 7, 9]
 arrayExpected = 7
 result = oddOcurrencyInArray(array)
-print 'In the provided array {' + str(array) + '} the odd item is {' + str(result) + '} and the expected was {' + str(arrayExpected) + '}'
+print('In the provided array {' + str(array) + '} the odd item is {' + str(result) + '} and the expected was {' + str(arrayExpected) + '}')
 
 array = [44, 3, 44, 3, 9, 102, 102]
 arrayExpected = 9
 result = oddOcurrencyInArray(array)
-print 'In the provided array {' + str(array) + '} the odd item is {' + str(result) + '} and the expected was {' + str(arrayExpected) + '}'
+print('In the provided array {' + str(array) + '} the odd item is {' + str(result) + '} and the expected was {' + str(arrayExpected) + '}')
