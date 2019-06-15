@@ -39,32 +39,42 @@ class Test(unittest.TestCase):
         maxLEN = abs(minLEN)
         minN = 1
         maxN = 100000
-        result = -1
+        result = 0
         
-        array = range(minN, maxN)
-        cA = list(A);
+        array = list(range(minN, maxN))
+        #print(array)
+        cA = list(dict.fromkeys(A));
         cA.sort()
-        cB = list(dict.fromkeys(cA))
-            
-        for i in range(0, len(A)):
-            if (array[i] != cB[i]):
+        #print(cA)
+
+        for i in range(0, len(cA)):
+            if (array[i] != cA[i]):
                 #print('I found the  {0} !'.format(array[i]))
                 result = array[i]
                 break
         
-        if (result == -1):
-            result = cB[len(cB) - 1] + 1
+        
+        if (result == 0):
+            result = cA[len(cA) - 1] + 1
+            
+        #if (len(cA) == 1):
+        #    result = cA[0] + 1
              
-        if (result < 1):
+        if (result <= 0):
             result = 1
         
         
         return result
     
+    
     def testSolution(self):
         self.assertEqual(self.solution([1, 3, 6, 4, 1, 2]), 5)
         self.assertEqual(self.solution([1, 2, 3]), 4)
         self.assertEqual(self.solution([-1, -3]), 1)
+        #self.assertEqual(self.solution([2]), 3)
+        #self.assertEqual(self.solution([-1, 2]), 3)
+        #self.assertEqual(self.solution([-1, 1, 3, 100, 200]), 201)
+        #self.assertEqual(self.solution([-1000000, 1, 3, 1000000]), 1000001)
 
 
 if __name__ == "__main__":
