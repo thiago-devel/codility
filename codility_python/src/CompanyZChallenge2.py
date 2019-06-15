@@ -11,6 +11,7 @@ root operations can be performed: sqrt(6561) = 81, sqrt(81) = 9 and sqrt(9) = 3.
 Write an efficient algorithm for the following assumptions:
     * A and B are integers within the range [2..1,000,000,000];
     * A ≤ B.
+@author: thiago-devel
 
 '''
 import unittest
